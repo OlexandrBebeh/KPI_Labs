@@ -14,7 +14,7 @@ public class TestKPI {
 
     @Before
     public void SetUp() {
-        System.setProperty("webdriver.chrome.driver", "src\\com\\company\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/java/com/company/chromedriver.exe");
         driver = new ChromeDriver();
         System.out.println("Test start");
     }
