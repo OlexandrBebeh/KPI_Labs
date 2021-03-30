@@ -43,9 +43,10 @@ public class FiltersPageObject {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
 
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > div.universe > div.wrapper.cf > div > div.catalog__wrapper > div.container.container--spaced.container--wider.container--catalog.catalog__body-wrapper > div.catalog__body.catalog__body--slide-desktop.catalog__body--slide-mobile > div.catalog__sidebar > div:nth-child(1) > div.filter__item-options > label:nth-child(1)")));
 
         TimeUnit.SECONDS.sleep(10);
+        System.out.println(driver.getCurrentUrl());
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > div.universe > div.wrapper.cf > div > div.catalog__wrapper > div.container.container--spaced.container--wider.container--catalog.catalog__body-wrapper > div.catalog__body.catalog__body--slide-desktop.catalog__body--slide-mobile > div.catalog__sidebar > div:nth-child(1) > div.filter__item-options > label:nth-child(1)")));
 
         priceFilter.click();
 
