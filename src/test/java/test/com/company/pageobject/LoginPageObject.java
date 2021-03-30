@@ -37,7 +37,7 @@ public class LoginPageObject {
 
         singInButton.click();
 
-        TimeUnit.SECONDS.sleep(15);
+        TimeUnit.SECONDS.sleep(30);
 
         driver.switchTo().frame(2);
 
@@ -47,7 +47,7 @@ public class LoginPageObject {
 
         submitLogin.submit();
 
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(10);
 
         homePage.click();
 

@@ -31,13 +31,14 @@ public class BucketPageObject {
         Actions builder = new Actions(driver);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[1]/div/div/a")));
-
-        for(int i = 1;i<=amount;i++) {
+        int i = 1;
+        //for(int i = 1;i<=amount;i++) {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a")));
             builder.moveToElement(driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a"))).perform();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a/div[3]/div[2]/button")));
             driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a/div[3]/div[2]/button")).click();
-            TimeUnit.SECONDS.sleep(3);
-        }
+            TimeUnit.SECONDS.sleep(5);
+        //}
 
     }
 }

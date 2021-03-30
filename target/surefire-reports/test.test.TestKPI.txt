@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: test.test.TestKPI
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 75.782 sec <<< FAILURE!
-testByWithoutLogin_fail(test.test.TestKPI)  Time elapsed: 7.912 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 104.623 sec <<< FAILURE!
+testByWithoutLogin_fail(test.test.TestKPI)  Time elapsed: 9.933 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<https://www.gog.com/[checkout]/> but was:<https://www.gog.com/[game]/>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)

@@ -43,13 +43,13 @@ public class FiltersPageObject {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/label[1]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > div.universe > div.wrapper.cf > div > div.catalog__wrapper > div.container.container--spaced.container--wider.container--catalog.catalog__body-wrapper > div.catalog__body.catalog__body--slide-desktop.catalog__body--slide-mobile > div.catalog__sidebar > div:nth-child(1) > div.filter__item-options > label:nth-child(1)")));
 
         priceFilter.click();
 
         platformFilter.click();
 
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(5);
 
         product.click();
 
