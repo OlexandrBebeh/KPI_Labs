@@ -41,11 +41,12 @@ public class FiltersPageObject {
 
         magazineButton.click();
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/label[1]")));
 
         priceFilter.click();
+
         platformFilter.click();
 
         TimeUnit.SECONDS.sleep(2);
