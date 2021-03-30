@@ -37,7 +37,6 @@ public class BucketPageObject {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a/div[3]/div[2]/button")));
             driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div[" +i+"]/div/div/a/div[3]/div[2]/button")).click();
             TimeUnit.SECONDS.sleep(5);
-            System.out.println("success " + i);
         }
 
     }

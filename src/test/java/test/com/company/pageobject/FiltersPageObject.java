@@ -28,6 +28,9 @@ public class FiltersPageObject {
     @FindBy(css = "body > div.layout.ng-scope > div:nth-child(8) > div.product-actions.hide-when-content-is-expanded.ng-scope > div.product-actions-price > span.product-actions-price__final-amount._price.ng-binding")
     private WebElement productPrice;
 
+    @FindBy(xpath = "/html/body/div[2]/div[2]/div/div[2]/div[1]/div[4]/div[1]/div")
+    private WebElement filterButton;
+
     @FindBy(id = "windows_icomoon-ignore")
     private WebElement ico;
 
@@ -46,14 +49,14 @@ public class FiltersPageObject {
 
         TimeUnit.SECONDS.sleep(10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[1]/div[4]/div[1]/div")));
-        driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div[1]/div[4]/div[1]/div")).click();
-        System.out.println(driver.getCurrentUrl());
+        filterButton.click();
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > div.universe > div.wrapper.cf > div > div.catalog__wrapper > div.container.container--spaced.container--wider.container--catalog.catalog__body-wrapper > div.catalog__body.catalog__body--slide-desktop.catalog__body--slide-mobile > div.catalog__sidebar > div:nth-child(1) > div.filter__item-options > label:nth-child(1)")));
 
         priceFilter.click();
-        System.out.println(driver.getCurrentUrl());
+
         platformFilter.click();
-        System.out.println(driver.getCurrentUrl());
+
         TimeUnit.SECONDS.sleep(5);
 
         product.click();
