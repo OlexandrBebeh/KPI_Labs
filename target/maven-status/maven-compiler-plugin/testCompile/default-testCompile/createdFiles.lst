@@ -1,0 +1,7 @@
+test\com\company\pageobject\BucketPageObject.class
+test\com\company\pageobject\FiltersPageObject.class
+test\com\company\pageobject\SearchPageObject.class
+test\com\company\pageobject\User.class
+test\com\company\pageobject\LoginPageObject.class
+test\test\TestKPI.class
+test\com\company\pageobject\BuyingPageObject.class

@@ -1,4 +1,4 @@
-package com.company.pageobject;
+package test.com.company.pageobject;
 
 public class User {
     private String email;

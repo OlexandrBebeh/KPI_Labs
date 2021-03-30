@@ -1,6 +1,6 @@
-package test;
+package test.test;
 
-import com.company.pageobject.*;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import test.com.company.pageobject.*;
 
 public class TestKPI {
     public WebDriver driver;
