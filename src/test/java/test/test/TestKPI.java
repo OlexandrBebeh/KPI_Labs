@@ -78,9 +78,9 @@ public class TestKPI {
     @Test
     public void testBucket() throws Exception{
         driver.get("https://www.gog.com/");
-        int amount = 5;
+        int amount = 4;
         BucketPageObject bucketPageObject = new BucketPageObject(driver);
-        bucketPageObject.addToBucket(5);
+        bucketPageObject.addToBucket(amount);
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/div[2]/nav/div[1]/div[2]/div[3]/a/span[1]")).getText(),String.valueOf(amount));
     }
     @After
