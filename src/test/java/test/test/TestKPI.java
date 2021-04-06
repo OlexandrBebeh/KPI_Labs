@@ -13,7 +13,7 @@ import test.com.company.pageobject.*;
 public class TestKPI {
     public WebDriver driver;
 
-    /*@Before
+    @Before
     public void SetUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver 7");
         driver = new ChromeDriver();
@@ -88,13 +88,5 @@ public class TestKPI {
         System.out.println("Test end");
         driver.close();
     }
-*/
-    @Test
-    public void test1() throws Exception{
-        int a = 1;
-        int b = 1;
-        int res = a + b;
 
-        Assert.assertEquals(0x2,res);
-    }
 }
